@@ -19,11 +19,13 @@
 
 <body>
 
+
      <!-- header -->
-  <header class="header" id="myTopnav">
+  <header class="header" >
     <a style="margin-left: 50px;cursor:pointer;" href="../HTML/home.html" class="logo"><img src="./images/logo.png"alt=""></a>
-    <nav>
+    <nav class="nav-links">
       <ul class="menu-items" > 
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
         <li>
           <a href="../HTML/home.html" class="menu-item-1">MEN</a>
           <div class="mega-menu">
@@ -164,9 +166,7 @@
         <span id="cart-count-info">0</span>
       </div>
     </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
+  
   </header>
 
   <!-- header -->
@@ -390,16 +390,6 @@
       setTimeout(showSlides, 2000); // Change image every 2 seconds
     }
   </script>
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "header") {
-          x.className += " responsive";
-        } else {
-          x.className = "header";
-        }
-      }
-    </script>
 </body>
 
 </html>

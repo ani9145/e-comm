@@ -319,25 +319,43 @@ body {
   text-align: center;
   color: #535766;
 }
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+ }
 
-@media screen and (max-width: 450px) {
-  .header a:not(:first-child) {display: none;}
-  .header a.icon {
-    float: right;
-    display: block;
-  }
-}
 
-@media screen and (max-width: 450px) {
-  .header.responsive {position: relative;}
-  .header.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
+@media (max-width: 658px) {
+  .header { 
+   display:none;
+   position: absolute;
+   background-color:teal;
+   right: 0;
+   left: 0;
+   text-align: center;
+   padding: 16px 0;
   }
-  .header.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+  .header li:hover {
+   display: inline-block;
+   background-color:#4c9e9e;
+   transition: 0.3s ease;
   }
-}
+  .header li + li {
+   margin-top: 12px;
+  }
+  input[type=checkbox]:checked ~ .header{
+   display: block;
+  }
+  .hamburger {
+   display: block;
+  }
+  .dropdown {
+   left: 50%;
+   top: 30px;
+   transform: translateX(35%);
+  }
+  .dropdown li:hover {
+   background-color: #4c9e9e;
+  }
+  }
