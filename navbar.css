@@ -326,8 +326,8 @@ body {
  }
 
 
-@media (max-width: 658px) {
-  .header { 
+@media (max-width: 768px) {
+  .nav-links { 
    display:none;
    position: absolute;
    background-color:teal;
@@ -336,15 +336,15 @@ body {
    text-align: center;
    padding: 16px 0;
   }
-  .header li:hover {
+  .nav-links li:hover {
    display: inline-block;
    background-color:#4c9e9e;
    transition: 0.3s ease;
   }
-  .header li + li {
+  .nav-links li + li {
    margin-top: 12px;
   }
-  input[type=checkbox]:checked ~ .header{
+  input[type=checkbox]:checked ~ .nav-links{
    display: block;
   }
   .hamburger {
@@ -358,4 +358,11 @@ body {
   .dropdown li:hover {
    background-color: #4c9e9e;
   }
+  .search-div {
+    display:none;
   }
+  .nav-last{
+    display:none;
+  }
+  }
+  
