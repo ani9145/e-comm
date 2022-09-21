@@ -364,5 +364,7 @@ body {
   .nav-last{
     display:none;
   }
- 
+  .text-banner-title{
+     font-size: 18px;
+  }
 }
