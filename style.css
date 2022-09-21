@@ -29,7 +29,7 @@ header {
 
 .container {
     /* max-width: 80vw; */
-    padding: 0 10vw;
+    padding: 90px 0 10px 0;
     margin: 13px 0px;
 }
 
@@ -127,4 +127,29 @@ nav ul li {
         display: flex;
         margin: 12px;
     }
+}
+
+.text-banner-title {
+    text-transform: uppercase;
+    color: #3e4152;
+    letter-spacing: 0.15em;
+    font-size: 1.8em;
+    margin: 50px 0 10px 30px;
+    max-height: 5em;
+    font-weight: 600;
+    text-align: center;
+  }
+  .img-link-container-3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .img-link-container-3{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  grid-row-gap: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 40px;
 }
